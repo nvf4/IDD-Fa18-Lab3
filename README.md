@@ -19,6 +19,9 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 Every pin has a different capacity for voltage
 You can also find this on the product page. 
 
+to see serial plotter:
+
+! (photo) [Screen Shot 2019-05-10 at 4.17.15 PM.png]
 ## Part B. RGB LED
 
 **How might you use this with only the parts in your kit? Show us your solution.**
