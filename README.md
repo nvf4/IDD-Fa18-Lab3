@@ -11,8 +11,13 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 ## Part A.  Writing to the Serial Monitor
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
+
+0-1023
  
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have?**
+10 bits gives you 0 -1023 discrete values, which is also equal to 5 volts. 
+Every pin has a different capacity for voltage
+You can also find this on the product page. 
 
 ## Part B. RGB LED
 
