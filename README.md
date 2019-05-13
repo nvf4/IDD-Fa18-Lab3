@@ -26,6 +26,8 @@ to see serial plotter:
 
 **How might you use this with only the parts in your kit? Show us your solution.**
 
+Add resistors.
+
 ## Part C. Voltage Varying Sensors 
  
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
