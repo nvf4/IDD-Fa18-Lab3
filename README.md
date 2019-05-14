@@ -33,13 +33,27 @@ Add resistors.
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
 
 **a. What voltage values do you see from your force sensor?**
+1 volt is analog = 200
+the numbers is digital (return value) 
+
+code is in this repository...as FSR
 
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
+This is linear, while a proximity sensor would not be linear because of the reflection not being read at the same rate. 
+
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
+
+You would divide analog by 4, you would get 255
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
+My answer: You push really hard and wait to see what is the highest output in the serial monitor.
+Justin's Answer: It's linear and 0-1023 maps to 0-255
+
+int scaledVoltage = map(voltageValue, 0, 1023, 0, 255);
+
+tried but not true here: look at the threshold for the LED, below voltage threshold, no LED can light, below 1.8 volts (red) , according to the internet. Instead of 5 - 0, we should map it from 1.8 - 5. Different colors have different voltage drop. 
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
 ### 2. Accelerometer
